@@ -12,6 +12,12 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./assets/jquery-3.6.0.min.js"></script>
+    <script>
+      $(function () {
+        $("#heroSection").load("./components/hero.html");
+      });
+    </script>
   </head>
   <body>
     <!-- Header Starts  -->
@@ -36,13 +42,11 @@
           <span class="bar"></span>
         </div>
       </nav>
-      <!-- Header Ends  -->
     </div>
-    <div class="heroSection">
-      <!-- background-img  -->
-      <!-- catchy-phrase-line  -->
-      <!-- call-to-action-button  -->
-    </div>
+    <!-- Header Ends  -->
+
+    <!-- Hero Section Starts  -->
+    <div id="heroSection" class="heroSection"></div>
     <script src="./js/script.js"></script>
   </body>
 </html>
